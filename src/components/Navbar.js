@@ -40,7 +40,6 @@ const NavbarContainer = styled.nav`
   justify-content: center;
 
   .nav-center {
-    
     width: 90vw;
     // margin:0 auto;
     max-width: var(--max-width);
@@ -64,6 +63,9 @@ const NavbarContainer = styled.nav`
     }
   }
   .nav-links {
+    display: none;
+  }
+  .cart-log-btns-wrapper{
     display: none;
   }
   @media (min-width: 992px) {
@@ -92,6 +94,9 @@ const NavbarContainer = styled.nav`
         }
       }
     }
+  .cart-log-btns-wrapper{
+    display:grid;
+  }
   }
 `;
 export default Navbar;
