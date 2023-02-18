@@ -5,7 +5,10 @@ import { FaTimes } from "react-icons/fa";
 import { links } from "../utils/constants";
 import { Link } from "react-router-dom";
 import CartLogButtons from './CartLogButtons'
+import { useProductsContext } from "../context/products-context";
 const Sidebar = () => {
+  const data =useProductsContext();
+  console.log(data);
   const isOpen = true;
   return (
     <SidebarContainer>
